@@ -1,12 +1,23 @@
-# React + Vite
+NutriWell – Personalized Health & Nutrition Assistant
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+NutriWell is a React-based web application that helps users take control of their health through personalized meal suggestions, exercise recommendations, and nutrition insights. By combining recipe APIs, visual nutrition breakdowns, and simple workout tips, NutriWell empowers users to build healthier lifestyles in a fun, interactive way.
 
-Currently, two official plugins are available:
+ *Features*
+User Profile Form – Collects personal details (age, gender, weight, height, activity level, dietary preferences, allergies, and goals).
+Meal Recommendations – Suggests meals tailored to user goals using the Spoonacular API.
+Nutrition Dashboard – Displays calories, proteins, carbs, and fats using Chart.js/Recharts.
+Exercise Suggestions – Provides beginner-friendly exercise routines based on user goals and activity level.
+Daily Health Tips – Rotating micro-tips to encourage healthy habits.
+Bookmark Recipes – Save favorite meals locally with localStorage.
+Dark/Light Mode – Toggle themes for better accessibility.
+Responsive Design – Works smoothly across mobile, tablet, and desktop.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+*Tech Stack*
+React (Vite)
+JavaScript (ES6+)
+Spoonacular API (recipes & nutrition)
+EDAMAME API
+Static JSON Dataset (exercise + health tips)
+Chart.js / React-Chartjs-2
+Tailwind CSS
+Netlify / Vercel (for deployment)
