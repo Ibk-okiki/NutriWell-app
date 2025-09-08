@@ -6,12 +6,12 @@ import About from './pages/About.jsx'
 
 function App() {
   return (
-    <div className="min-h-screen bg-green-50 flex flex-col">
+    <div className="min-h-screen bg-nutri-green flex flex-col">
       {/* Header */}
       <Header />
 
       {/* Main Content */}
-      <main className="flex-grow">
+      <main className="flex-grow text-nutri-dark">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

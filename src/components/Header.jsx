@@ -5,7 +5,7 @@ import { FaFacebook, FaTwitter } from "react-icons/fa";
 const Header = () => {
   return (
     <header className="bg-white shadow-md">
-      <div className="container mx-auto px-6 py-4 flex justify-between items-center">
+      <div className="container mx-auto px-8 py-4 flex justify-between items-center">
         {/* Logo */}
         <h1 className="text-2xl font-bold bg-gradient-to-r from-green-700 to-orange-600 bg-clip-text ">
           NutriWell
@@ -16,10 +16,10 @@ const Header = () => {
           <Link to="/" className="hover:text-green-600 transition">
             Home
           </Link>
-          <Link to="/about" className="ml-4 hover:text-green-600 transition">
+          <Link to="/about" className="ml-8 hover:text-green-600 transition">
             About
           </Link>
-          <a href="#services" className="hover:text-green-600 transition">
+          <a href="#services" className="flex gap-12 hover:text-green-600 transition">
             Services
           </a>
           <a href="#plans" className="hover:text-green-600 transition">
