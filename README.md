@@ -1,4 +1,4 @@
-NutriWell – Personalized Health & Nutrition Assistant App*
+*NutriWell – Personalized Health & Nutrition Assistant App*
 
 This is a personalized health & nutrition assistant web app. Users input personal health data (age, weight, activity level, goals), and the app provides customized meal suggestions, daily nutrition breakdowns, and beginner-friendly wellness tips. The goal is to promote healthier lifestyles through tailored recommendations and engaging micro-learning content.
 This app combines elements of health, nutrition, and education into a compact, interactive, and helpful React project.
