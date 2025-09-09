@@ -4,39 +4,39 @@ import { FaFacebook, FaTwitter } from "react-icons/fa";
 
 const Header = () => {
   return (
-    <header className="bg-white shadow-md">
+    <header className="bg-gradient-to-br from-[#FEFCF3] to-[#FEFCF3] relative overflow shadow-md">
       <div className="container mx-auto px-8 py-4 flex justify-between items-center">
         {/* Logo */}
-        <h1 className="text-2xl font-bold bg-gradient-to-r from-green-700 to-orange-600 bg-clip-text ">
+        <h1 className=" text-2xl font-bold text-[#2F855A] to-[#DD6B20] bg-clip-text ">
           NutriWell
         </h1>
 
         {/* Navigation */}
-        <nav className="flex gap-12 text-green-700 font-medium">
-          <Link to="/" className="hover:text-green-600 transition">
+        <nav className="flex gap-12 text-nutri-dark font-medium">
+          <Link to="/" className="hover:text-nutri-green transition">
             Home
           </Link>
-          <Link to="/about" className="ml-8 hover:text-green-600 transition">
+          <Link to="/about" className="ml-8 hover:text-nutri-green transition">
             About
           </Link>
-          <a href="#services" className="flex gap-12 hover:text-green-600 transition">
+          <a href="#services" className="hover:text-nutri-green transition">
             Services
           </a>
-          <a href="#plans" className="hover:text-green-600 transition">
+          <a href="#plans" className="hover:text-nutri-green transition">
             Plans
           </a>
-          <a href="#contact" className="hover:text-green-600 transition">
+          <a href="#contact" className="hover:text-nutri-green transition">
             Contact
           </a>
         </nav>
 
         {/* Social Icons */}
-        <div className="flex gap-4 text-green-700">
+        <div className="flex gap-4 text-nutri-green">
           <a
             href="https://facebook.com"
             target="_blank"
             rel="noreferrer"
-            className="hover:text-green-900 transition"
+            className="hover:text-nutri-dark transition"
           >
             <FaFacebook size={20} />
           </a>
@@ -44,7 +44,7 @@ const Header = () => {
             href="https://twitter.com"
             target="_blank"
             rel="noreferrer"
-            className="hover:text-green-900 transition"
+            className="hover:text-nutri-dark transition"
           >
             <FaTwitter size={20} />
           </a>

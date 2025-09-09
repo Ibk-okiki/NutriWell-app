@@ -1,42 +1,52 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
+// Remember to 'npm install react-icons' if you haven't already
+import { FaArrowRight } from 'react-icons/fa';
 
 const Home = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#FEFCF3] to-[#2F855A] relative overflow-hidden">
+    // Main container with the background gradient
+    <div className="relative min-h-screen w-full bg-gradient-to-br from-nutri-cream via-nutri-cream to-green-100 text-nutri-brown overflow-hidden">
+      {/* This empty div is for the absolutely positioned Header */}
+      <div className="h-24"></div>
+
       {/* Hero Section */}
-      <div className="container mx-auto px-8 py-16 flex flex-col items-center text-center">
-        {/* Title */}
-        <h1 className="text-4xl md:text-6xl font-bold uppercase leading-tight text-[#422006]">
-          Your Personalized Path to Health & Vitality
-        </h1>
+      <main className="container mx-auto px-8 flex flex-col lg:flex-row items-center justify-between gap-12">
+        
+        {/* Left Side: Text Content */}
+        <div className="lg:w-1/2 text-center lg:text-left pt-12 lg:pt-0">
+          <h1 className="font-sans font-bold text-5xl md:text-7xl text-nutri-brown-dark uppercase tracking-wide leading-tight">
+            Your Personalized Path to <span className="text-nutri-green">Health & Vitality</span>
+          </h1>
+          <p className="font-body text-xl mt-6 max-w-lg mx-auto lg:mx-0">
+            Get tailored meal plans, health tips, and lifestyle guidance. All in one app, backed by nutrition science.
+          </p>
+          <div className="mt-10">
+            <Link to="/start" className="inline-flex items-center gap-3 bg-nutri-orange text-white font-bold text-lg py-4 px-8 rounded-full shadow-lg hover:scale-105 transition-transform duration-300">
+              Start Your Journey
+              <FaArrowRight />
+            </Link>
+          </div>
+        </div>
 
-        {/* Subtitle */}
-        <p className="mt-6 text-lg md:text-xl text-[#422006] max-w-xl">
-          Get tailored meal plans, health tips, and lifestyle guidance all in one app, 
-          backed by nutrition science.
-        </p>
+        {/* Right Side: Image */}
+        <div className="lg:w-1/2 flex justify-center lg:justify-end">
+          {/* REPLACE the src with the path to your hero image. 
+            You can download it from Figma and place it in your 'src/assets' folder.
+            Example: import heroImage from '../assets/hero-image.png';
+          */}
+          <img 
+            src="https://via.placeholder.com/600x400" // <-- REPLACE THIS with your image
+            alt="Healthy and delicious food bowl" 
+            className="w-full max-w-xl" 
+          />
+        </div>
 
-        {/* CTA Button */}
-        <Link
-          to="/plans"
-          className="mt-10 bg-nutri-green text-white px-8 py-4 rounded-2xl text-lg font-semibold shadow-lg hover:bg-nutri-orange transition"
-        >
-          Get Started
-        </Link>
-      </div>
+      </main>
 
-      {/* Hero Image */}
-      <div className="absolute right-10 bottom-0 max-w-xl opacity-90">
-        <img
-          src="/pexels-foodie-factor-162291-566566-removebg-preview.png"
-          alt="Healthy Food"
-          className="rounded-lg"
-        />
-      </div>
-
-      {/* Decorative Vector */}
-      <div className="absolute left-0 bottom-10 w-32 h-48 border border-[#27C840] rounded-full"></div>
+      {/* Decorative background vectors/shapes (optional, but adds polish) */}
+      <div className="absolute top-0 -left-32 w-96 h-96 bg-green-200 rounded-full opacity-20 mix-blend-multiply filter blur-3xl animate-blob"></div>
+      <div className="absolute bottom-0 -right-32 w-96 h-96 bg-orange-200 rounded-full opacity-20 mix-blend-multiply filter blur-3xl animate-blob animation-delay-4000"></div>
     </div>
   );
 };
