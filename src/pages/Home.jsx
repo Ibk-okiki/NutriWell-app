@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// Remember to 'npm install react-icons' if you haven't already
 import { FaArrowRight } from 'react-icons/fa';
 
 const Home = () => {
@@ -31,12 +30,8 @@ const Home = () => {
 
         {/* Right Side: Image */}
         <div className="lg:w-1/2 flex justify-center lg:justify-end">
-          {/* REPLACE the src with the path to your hero image. 
-            You can download it from Figma and place it in your 'src/assets' folder.
-            Example: import heroImage from '../assets/hero-image.png';
-          */}
           <img 
-            src="https://via.placeholder.com/600x400" // <-- REPLACE THIS with your image
+            src="https://via.placeholder.com/600x400" 
             alt="Healthy and delicious food bowl" 
             className="w-full max-w-xl" 
           />
@@ -44,7 +39,7 @@ const Home = () => {
 
       </main>
 
-      {/* Decorative background vectors/shapes (optional, but adds polish) */}
+      {/* Decorative background  */}
       <div className="absolute top-0 -left-32 w-96 h-96 bg-green-200 rounded-full opacity-20 mix-blend-multiply filter blur-3xl animate-blob"></div>
       <div className="absolute bottom-0 -right-32 w-96 h-96 bg-orange-200 rounded-full opacity-20 mix-blend-multiply filter blur-3xl animate-blob animation-delay-4000"></div>
     </div>
