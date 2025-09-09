@@ -4,6 +4,7 @@ This is a personalized health & nutrition assistant web app. Users input persona
 This app combines elements of health, nutrition, and education into a compact, interactive, and helpful React project.
 
 Main Features
+
 User Input Form: Collect age, gender, weight, height, activity level, dietary preferences, allergies, and goals (e.g., weight loss, muscle gain, balanced diet).
 
 Meal Recommendation System: Suggest recipes or daily meal plans tailored to user data.
@@ -51,20 +52,28 @@ ProgressTracker(optional): Tracks user inputs weekly
 
 Footer: Contact/info/about                                                                                                                                                    
 Future updates 
+
 Gamified Health Challenges: Complete healthy habits (drink water, walk 5k steps) for badges.
 
 Hydration Reminder Popup
 
 Voice Assistant for Dietary Tips (Web Speech API)
+
 Backend with Firebase (if time permits)
 
 Tech Stack
+
  React
-JavaScript (ES6+)
+ 
+JavaScript
+
 Edamam API
-Chart.js or Recharts
-CSS Modules / Tailwind (optional)
-Netlify or Vercel for deployment
+
+Chart.js
+
+Tailwind
+
+Vercel for deployment
 
 Why This Matters
 This project empowers users to take control of their health using simple tools, personalized insights, and fun educational tidbits. It is perfect for busy students, young professionals, or anyone seeking an interactive way to improve their lifestyle.
