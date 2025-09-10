@@ -1,17 +1,14 @@
-// src/api/edamamService.js
 
 const APP_ID = import.meta.env.VITE_EDAMAM_APP_ID;
 const APP_KEY = import.meta.env.VITE_EDAMAM_APP_KEY;
 const API_URL = 'https://api.edamam.com/api/recipes/v2';
 
 export const fetchPersonalizedRecipes = async (userPreferences) => {
-  // Example: We will build out the query based on userPreferences later
   const { goal, dietaryNeeds } = userPreferences;
 
-  // For now, let's just search for "chicken" as a test
   const query = "chicken";
 
-  // Construct the full API request URL
+  // Full API request URL
   const url = `${API_URL}?type=public&q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}`;
 
   try {
